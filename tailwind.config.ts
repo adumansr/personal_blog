@@ -28,6 +28,8 @@ export default {
 			},
 			fontFamily: {
 				// Add any custom fonts here
+				lato: ["Lato", ...fontFamily.sans],
+				roboto: ["Roboto", ...fontFamily.sans],
 				sans: [...fontFamily.sans],
 				serif: [...fontFamily.serif],
 			},
