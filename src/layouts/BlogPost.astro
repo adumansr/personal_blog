@@ -45,7 +45,7 @@ const { headings } = await post.render();
 					<h2 class="font-semibold">Table of Contents</h2>
 					<ul class="mt-4 text-xs">
 						{headings.map(({ depth, slug, text }) => (
-							<li class="line-clamp-2 hover:text-accent">
+							<li class="line-clamp-2 text-lg hover:text-accent">
 								<a
 									class={`block ${depth <= 2 ? "mt-3" : "mt-2 ps-3 text-[0.6875rem]"}`}
 									href={`#${slug}`}
@@ -63,7 +63,7 @@ const { headings } = await post.render();
 		<article class="flex-grow break-words">
 			<div id="blog-hero"><BlogHero content={post} /></div>
 			<div
-				class="prose prose-sm prose-cactus mt-12 prose-headings:font-semibold prose-headings:before:absolute prose-headings:before:-ms-4 prose-headings:before:text-accent prose-headings:before:content-['#'] prose-th:before:content-none"
+				class="prose prose-sm prose-cactus mt-12 text-lg prose-headings:font-semibold prose-headings:before:absolute prose-headings:before:-ms-4 prose-headings:before:text-accent prose-headings:before:content-[''] prose-th:before:content-none"
 			>
 				<slot />
 			</div>
